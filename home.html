@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAP - Simple Image and Audio Processor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Image and Audio Processor (SIAP)</h1>
+        <div class="section">
+            <h2>Image Processing</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageWidth">New Width (px):</label>
+            <input type="number" id="imageWidth">
+            <label for="imageHeight">New Height (px):</label>
+            <input type="number" id="imageHeight">
+            <!-- Add more input fields for other image processing options -->
+            <button onclick="resizeImage()">Resize Image</button>
+            <div id="imagePreview"></div>
+            <a id="downloadLink" download="resized_image.jpg" style="display: none;">Download Resized Image</a>
+        </div>
+        <div class="section">
+            <h2>Audio Processing</h2>
+            <input type="file" id="audioInput" accept="audio/*">
+            <!-- Add input fields and buttons for audio processing options -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
